@@ -1,0 +1,1631 @@
+
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#080F1C">
+
+<meta name="description" content="NUVORA STUDIO accompagne les marques et créateurs dans leur développement digital, leur création de contenu et leur présence sur les réseaux sociaux.">
+
+<title>NUVORA STUDIO — Agence digitale</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+
+  --bg: #080F1C;
+
+  --panel: #101B2C;
+
+  --panel2: #142238;
+
+  --blue: #3978D5;
+
+  --lightblue: #68A5FF;
+
+  --white: #FFFFFF;
+
+  --grey: #B8C7D9;
+
+  --muted: #8292A9;
+
+  --border: rgba(184,199,217,.13);
+
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior:smooth; scroll-padding-top:90px; }
+
+body {
+
+  background:var(--bg);
+
+  color:var(--white);
+
+  font-family:'DM Sans',sans-serif;
+
+  overflow-x:hidden;
+
+}
+
+a { text-decoration:none; color:inherit; }
+
+button { font:inherit; cursor:pointer; }
+
+.container {
+
+  width:min(1120px,90%);
+
+  margin:auto;
+
+}
+
+/* NAVIGATION */
+
+header {
+
+  position:sticky;
+
+  top:0;
+
+  z-index:100;
+
+  background:rgba(8,15,28,.91);
+
+  backdrop-filter:blur(18px);
+
+  border-bottom:1px solid var(--border);
+
+}
+
+.nav {
+
+  height:78px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+}
+
+.logo {
+
+  font-family:'Manrope',sans-serif;
+
+  font-size:23px;
+
+  font-weight:800;
+
+  letter-spacing:4px;
+
+}
+
+.logo span { color:var(--lightblue); }
+
+.logo small {
+
+  display:block;
+
+  font-size:9px;
+
+  letter-spacing:7px;
+
+  color:var(--grey);
+
+  text-align:center;
+
+  margin-top:-3px;
+
+}
+
+.nav-links {
+
+  display:flex;
+
+  gap:30px;
+
+  align-items:center;
+
+}
+
+.nav-links a {
+
+  font-size:13px;
+
+  color:var(--grey);
+
+  transition:.3s;
+
+}
+
+.nav-links a:hover { color:var(--lightblue); }
+
+.nav-button {
+
+  border:1px solid var(--blue);
+
+  padding:11px 19px;
+
+  border-radius:30px;
+
+  color:white;
+
+  font-size:13px;
+
+  transition:.3s;
+
+}
+
+.nav-button:hover {
+
+  background:var(--blue);
+
+  box-shadow:0 0 25px rgba(57,120,213,.3);
+
+}
+
+.menu-btn {
+
+  display:none;
+
+  background:none;
+
+  border:0;
+
+  color:white;
+
+  font-size:25px;
+
+}
+
+/* HERO */
+
+.hero {
+
+  position:relative;
+
+  padding:125px 0 115px;
+
+  overflow:hidden;
+
+  background:
+
+    radial-gradient(ellipse at 80% 45%,rgba(57,120,213,.19),transparent 35%),
+
+    linear-gradient(120deg,#080F1C,#0D192B);
+
+}
+
+.hero::after {
+
+  content:"";
+
+  position:absolute;
+
+  width:450px;
+
+  height:450px;
+
+  border:1px solid rgba(57,120,213,.2);
+
+  border-radius:50%;
+
+  right:-170px;
+
+  top:20px;
+
+  box-shadow:0 0 80px rgba(57,120,213,.12);
+
+}
+
+.hero-content {
+
+  position:relative;
+
+  z-index:2;
+
+  max-width:760px;
+
+}
+
+.tag {
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  padding:9px 16px;
+
+  border:1px solid var(--border);
+
+  border-radius:30px;
+
+  color:var(--grey);
+
+  font-size:12px;
+
+  margin-bottom:28px;
+
+  background:rgba(16,27,44,.6);
+
+}
+
+.tag::before {
+
+  content:"";
+
+  width:7px;
+
+  height:7px;
+
+  background:var(--blue);
+
+  border-radius:50%;
+
+  box-shadow:0 0 12px var(--blue);
+
+}
+
+.hero h1 {
+
+  font-family:'Manrope',sans-serif;
+
+  font-size:clamp(43px,7vw,79px);
+
+  line-height:1.05;
+
+  letter-spacing:-3px;
+
+  font-weight:800;
+
+}
+
+.blue { color:var(--lightblue); }
+
+.hero h2 {
+
+  font-size:clamp(21px,3vw,31px);
+
+  font-weight:500;
+
+  margin-top:17px;
+
+  color:var(--grey);
+
+}
+
+.hero p {
+
+  color:var(--muted);
+
+  line-height:1.8;
+
+  max-width:570px;
+
+  margin-top:22px;
+
+  font-size:15px;
+
+}
+
+.actions {
+
+  display:flex;
+
+  gap:15px;
+
+  margin-top:35px;
+
+  flex-wrap:wrap;
+
+}
+
+.btn {
+
+  padding:15px 25px;
+
+  border-radius:30px;
+
+  font-size:13px;
+
+  font-weight:700;
+
+  display:inline-flex;
+
+  align-items:center;
+
+  gap:10px;
+
+  transition:.3s;
+
+}
+
+.btn-primary {
+
+  background:var(--blue);
+
+  color:white;
+
+  box-shadow:0 5px 25px rgba(57,120,213,.2);
+
+}
+
+.btn-primary:hover {
+
+  transform:translateY(-3px);
+
+  background:#4B8CEB;
+
+}
+
+.btn-outline {
+
+  border:1px solid var(--border);
+
+  color:white;
+
+}
+
+.btn-outline:hover {
+
+  border-color:var(--blue);
+
+  color:var(--lightblue);
+
+}
+
+/* SECTION */
+
+section { padding:95px 0; }
+
+.section-head {
+
+  text-align:center;
+
+  margin-bottom:48px;
+
+}
+
+.eyebrow {
+
+  color:var(--lightblue);
+
+  font-size:11px;
+
+  font-weight:700;
+
+  letter-spacing:3px;
+
+  text-transform:uppercase;
+
+  margin-bottom:14px;
+
+}
+
+.section-head h2 {
+
+  font-family:'Manrope',sans-serif;
+
+  font-size:clamp(29px,4vw,42px);
+
+  letter-spacing:-1.3px;
+
+}
+
+.section-head p {
+
+  color:var(--muted);
+
+  max-width:540px;
+
+  margin:15px auto 0;
+
+  line-height:1.7;
+
+  font-size:14px;
+
+}
+
+/* SERVICES */
+
+.services { background:#0B1422; }
+
+.cards {
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:17px;
+
+}
+
+.card {
+
+  background:linear-gradient(145deg,#111F32,#0C1726);
+
+  border:1px solid var(--border);
+
+  padding:28px 22px;
+
+  border-radius:17px;
+
+  transition:.3s;
+
+}
+
+.card:hover {
+
+  transform:translateY(-7px);
+
+  border-color:rgba(57,120,213,.6);
+
+  box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+
+.card-icon {
+
+  width:49px;
+
+  height:49px;
+
+  border-radius:14px;
+
+  display:grid;
+
+  place-items:center;
+
+  background:rgba(57,120,213,.13);
+
+  border:1px solid rgba(57,120,213,.25);
+
+  color:var(--lightblue);
+
+  font-size:22px;
+
+  margin-bottom:24px;
+
+}
+
+.card h3 { font-size:16px; margin-bottom:12px; }
+
+.card p {
+
+  font-size:13px;
+
+  color:var(--muted);
+
+  line-height:1.7;
+
+}
+
+/* ABOUT */
+
+.about-grid {
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  align-items:center;
+
+  gap:65px;
+
+}
+
+.about-visual {
+
+  min-height:350px;
+
+  border-radius:22px;
+
+  border:1px solid var(--border);
+
+  background:
+
+    radial-gradient(circle at 50% 40%,rgba(57,120,213,.3),transparent 50%),
+
+    linear-gradient(145deg,#14243A,#091321);
+
+  display:grid;
+
+  place-items:center;
+
+  position:relative;
+
+  overflow:hidden;
+
+}
+
+.big-n {
+
+  font-family:'Manrope',sans-serif;
+
+  font-size:180px;
+
+  font-weight:800;
+
+  color:transparent;
+
+  -webkit-text-stroke:2px var(--lightblue);
+
+  text-shadow:0 0 45px rgba(57,120,213,.4);
+
+}
+
+.about-visual::after {
+
+  content:"NUVORA STUDIO";
+
+  position:absolute;
+
+  bottom:35px;
+
+  letter-spacing:7px;
+
+  font-size:11px;
+
+  color:var(--grey);
+
+}
+
+.about-text h2 {
+
+  font-family:'Manrope',sans-serif;
+
+  font-size:35px;
+
+  line-height:1.2;
+
+  margin-bottom:22px;
+
+}
+
+.about-text p {
+
+  color:var(--muted);
+
+  font-size:14px;
+
+  line-height:1.9;
+
+  margin-bottom:17px;
+
+}
+
+.points {
+
+  list-style:none;
+
+  display:grid;
+
+  gap:13px;
+
+  margin-top:25px;
+
+}
+
+.points li {
+
+  color:var(--grey);
+
+  font-size:13px;
+
+}
+
+.points li::before {
+
+  content:"✓";
+
+  color:var(--lightblue);
+
+  margin-right:12px;
+
+  font-weight:bold;
+
+}
+
+/* REALISATIONS */
+
+.projects { background:#0B1422; }
+
+.project-grid {
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:20px;
+
+}
+
+.project {
+
+  min-height:230px;
+
+  border:1px solid var(--border);
+
+  border-radius:17px;
+
+  overflow:hidden;
+
+  background:linear-gradient(145deg,#172B46,#0D192B);
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:flex-end;
+
+  padding:25px;
+
+  position:relative;
+
+  transition:.3s;
+
+}
+
+.project:hover {
+
+  transform:translateY(-5px);
+
+  border-color:var(--blue);
+
+}
+
+.project-number {
+
+  position:absolute;
+
+  top:20px;
+
+  right:22px;
+
+  font-size:45px;
+
+  color:rgba(104,165,255,.2);
+
+  font-family:'Manrope',sans-serif;
+
+  font-weight:800;
+
+}
+
+.project-label {
+
+  color:var(--lightblue);
+
+  text-transform:uppercase;
+
+  font-size:10px;
+
+  letter-spacing:2px;
+
+  margin-bottom:9px;
+
+}
+
+.project h3 { font-size:19px; margin-bottom:8px; }
+
+.project p {
+
+  color:var(--grey);
+
+  font-size:12px;
+
+  line-height:1.6;
+
+}
+
+/* METHODE */
+
+.steps {
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:22px;
+
+}
+
+.step {
+
+  padding:26px;
+
+  border-left:2px solid var(--blue);
+
+  background:linear-gradient(90deg,rgba(57,120,213,.09),transparent);
+
+}
+
+.step span {
+
+  font-size:12px;
+
+  color:var(--lightblue);
+
+  letter-spacing:2px;
+
+}
+
+.step h3 { margin:13px 0; font-size:18px; }
+
+.step p {
+
+  font-size:13px;
+
+  color:var(--muted);
+
+  line-height:1.7;
+
+}
+
+/* CONTACT */
+
+.contact {
+
+  background:
+
+    radial-gradient(ellipse at 50% 100%,rgba(57,120,213,.2),transparent 65%),
+
+    #0D192A;
+
+  text-align:center;
+
+  border-top:1px solid var(--border);
+
+  border-bottom:1px solid var(--border);
+
+}
+
+.contact h2 {
+
+  font-family:'Manrope',sans-serif;
+
+  font-size:clamp(30px,5vw,48px);
+
+  margin-bottom:17px;
+
+}
+
+.contact p {
+
+  color:var(--grey);
+
+  font-size:14px;
+
+  line-height:1.8;
+
+  margin-bottom:30px;
+
+}
+
+.contact-box {
+
+  max-width:620px;
+
+  margin:35px auto 0;
+
+  display:grid;
+
+  gap:14px;
+
+  text-align:left;
+
+}
+
+.contact-box input,
+
+.contact-box textarea,
+
+.contact-box select {
+
+  width:100%;
+
+  padding:15px 17px;
+
+  border:1px solid var(--border);
+
+  background:#101B2C;
+
+  border-radius:10px;
+
+  color:white;
+
+  font:inherit;
+
+  font-size:13px;
+
+  outline:none;
+
+}
+
+.contact-box input:focus,
+
+.contact-box textarea:focus,
+
+.contact-box select:focus {
+
+  border-color:var(--blue);
+
+}
+
+.contact-box textarea {
+
+  min-height:130px;
+
+  resize:vertical;
+
+}
+
+.contact-box select option { background:#101B2C; }
+
+.contact-box button { border:0; justify-content:center; }
+
+.form-note {
+
+  text-align:center;
+
+  color:var(--muted);
+
+  font-size:11px;
+
+}
+
+/* FOOTER */
+
+footer {
+
+  padding:32px 0;
+
+  background:#070D17;
+
+}
+
+.footer-inner {
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+
+}
+
+.footer-text {
+
+  color:var(--muted);
+
+  font-size:11px;
+
+}
+
+.footer-links {
+
+  display:flex;
+
+  gap:22px;
+
+}
+
+.footer-links a {
+
+  font-size:12px;
+
+  color:var(--grey);
+
+}
+
+.footer-links a:hover { color:var(--lightblue); }
+
+/* ANIMATIONS */
+
+.reveal {
+
+  opacity:0;
+
+  transform:translateY(22px);
+
+  transition:opacity .7s ease,transform .7s ease;
+
+}
+
+.reveal.visible {
+
+  opacity:1;
+
+  transform:translateY(0);
+
+}
+
+/* MOBILE */
+
+@media(max-width:850px) {
+
+  .cards { grid-template-columns:repeat(2,1fr); }
+
+  .project-grid { grid-template-columns:repeat(2,1fr); }
+
+  .about-grid { gap:35px; }
+
+}
+
+@media(max-width:650px) {
+
+  .nav { height:68px; }
+
+  .menu-btn { display:block; }
+
+  .nav-button { display:none; }
+
+  .nav-links {
+
+    display:none;
+
+    position:absolute;
+
+    top:68px;
+
+    left:0;
+
+    width:100%;
+
+    padding:25px 5%;
+
+    background:#0B1422;
+
+    border-bottom:1px solid var(--border);
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:22px;
+
+  }
+
+  .nav-links.open { display:flex; }
+
+  .hero { padding:90px 0; }
+
+  .hero h1 { letter-spacing:-2px; }
+
+  section { padding:70px 0; }
+
+  .cards,
+
+  .project-grid,
+
+  .steps,
+
+  .about-grid {
+
+    grid-template-columns:1fr;
+
+  }
+
+  .about-visual { min-height:260px; }
+
+  .big-n { font-size:140px; }
+
+  .footer-inner {
+
+    flex-direction:column;
+
+    text-align:center;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="container nav">
+
+    <a href="#accueil" class="logo">
+
+      NUVORA<span>.</span>
+
+      <small>STUDIO</small>
+
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+
+      <a href="#accueil">Accueil</a>
+
+      <a href="#services">Services</a>
+
+      <a href="#apropos">À propos</a>
+
+      <a href="#realisations">Réalisations</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+    <a href="#contact" class="nav-button">Travaillons ensemble ↗</a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+  </div>
+
+</header>
+
+<main>
+
+<!-- ACCUEIL -->
+
+<section class="hero" id="accueil">
+
+  <div class="container">
+
+    <div class="hero-content reveal">
+
+      <div class="tag">Agence de marketing digital</div>
+
+      <h1>NUVORA <span class="blue">STUDIO</span></h1>
+
+      <h2>Façonnez votre présence digitale.</h2>
+
+      <p>
+
+        Nous accompagnons les marques, entreprises et créateurs
+
+        dans le développement de leur image, leur visibilité
+
+        et leur présence sur les réseaux sociaux.
+
+      </p>
+
+      <div class="actions">
+
+        <a href="#services" class="btn btn-primary">
+
+          Découvrir nos services →
+
+        </a>
+
+        <a href="#contact" class="btn btn-outline">
+
+          Nous contacter
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <div class="eyebrow">Nos expertises</div>
+
+      <h2>Une stratégie digitale <span class="blue">complète.</span></h2>
+
+      <p>
+
+        Des solutions créatives et stratégiques pour développer
+
+        votre présence en ligne.
+
+      </p>
+
+    </div>
+
+    <div class="cards">
+
+      <article class="card reveal">
+
+        <div class="card-icon">↗</div>
+
+        <h3>Stratégie digitale</h3>
+
+        <p>
+
+          Définition de votre stratégie pour améliorer votre
+
+          visibilité et atteindre vos objectifs.
+
+        </p>
+
+      </article>
+
+      <article class="card reveal">
+
+        <div class="card-icon">▶</div>
+
+        <h3>Création de contenu</h3>
+
+        <p>
+
+          Création et montage de vidéos pour attirer
+
+          l'attention et engager votre audience.
+
+        </p>
+
+      </article>
+
+      <article class="card reveal">
+
+        <div class="card-icon">◎</div>
+
+        <h3>Gestion des réseaux</h3>
+
+        <p>
+
+          Organisation et accompagnement de votre
+
+          communication sur les réseaux sociaux.
+
+        </p>
+
+      </article>
+
+      <article class="card reveal">
+
+        <div class="card-icon">✦</div>
+
+        <h3>Identité visuelle</h3>
+
+        <p>
+
+          Une image cohérente et professionnelle pour
+
+          rendre votre marque reconnaissable.
+
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- A PROPOS -->
+
+<section id="apropos">
+
+  <div class="container about-grid">
+
+    <div class="about-visual reveal">
+
+      <div class="big-n">N</div>
+
+    </div>
+
+    <div class="about-text reveal">
+
+      <div class="eyebrow">Notre agence</div>
+
+      <h2>Pourquoi choisir <span class="blue">NUVORA STUDIO</span> ?</h2>
+
+      <p>
+
+        NUVORA STUDIO est une agence de marketing digital
+
+        qui place la créativité, la stratégie et l'image
+
+        de marque au cœur de chaque projet.
+
+      </p>
+
+      <p>
+
+        Notre objectif : vous aider à construire une
+
+        présence digitale forte, cohérente et durable.
+
+      </p>
+
+      <ul class="points">
+
+        <li>Une approche personnalisée</li>
+
+        <li>Une communication moderne</li>
+
+        <li>Des solutions adaptées à vos objectifs</li>
+
+        <li>Un accompagnement transparent</li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- REALISATIONS -->
+
+<section class="projects" id="realisations">
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <div class="eyebrow">Notre univers</div>
+
+      <h2>Nos domaines <span class="blue">d'intervention.</span></h2>
+
+      <p>
+
+        Quelques exemples de projets et de secteurs
+
+        que nous pouvons accompagner.
+
+      </p>
+
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project reveal">
+
+        <span class="project-number">01</span>
+
+        <div class="project-label">Social media</div>
+
+        <h3>Réseaux sociaux</h3>
+
+        <p>Développer une présence cohérente et reconnaissable.</p>
+
+      </article>
+
+      <article class="project reveal">
+
+        <span class="project-number">02</span>
+
+        <div class="project-label">Content creation</div>
+
+        <h3>Création vidéo</h3>
+
+        <p>Produire du contenu adapté aux plateformes digitales.</p>
+
+      </article>
+
+      <article class="project reveal">
+
+        <span class="project-number">03</span>
+
+        <div class="project-label">Brand identity</div>
+
+        <h3>Image de marque</h3>
+
+        <p>Construire un univers visuel professionnel et unique.</p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- METHODE -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <div class="eyebrow">Notre méthode</div>
+
+      <h2>Un accompagnement <span class="blue">en 3 étapes.</span></h2>
+
+    </div>
+
+    <div class="steps">
+
+      <article class="step reveal">
+
+        <span>ÉTAPE 01</span>
+
+        <h3>Comprendre</h3>
+
+        <p>
+
+          Nous échangeons pour comprendre votre activité,
+
+          vos besoins et vos objectifs.
+
+        </p>
+
+      </article>
+
+      <article class="step reveal">
+
+        <span>ÉTAPE 02</span>
+
+        <h3>Créer</h3>
+
+        <p>
+
+          Nous construisons une stratégie et des contenus
+
+          adaptés à votre identité.
+
+        </p>
+
+      </article>
+
+      <article class="step reveal">
+
+        <span>ÉTAPE 03</span>
+
+        <h3>Développer</h3>
+
+        <p>
+
+          Nous vous accompagnons dans le suivi et
+
+          l'amélioration de votre présence digitale.
+
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="eyebrow">Parlons de votre projet</div>
+
+    <h2>Prêt à développer votre <span class="blue">image ?</span></h2>
+
+    <p>
+
+      Présentez-nous votre projet et échangeons
+
+      sur les possibilités de collaboration.
+
+    </p>
+
+    <form class="contact-box" id="contactForm">
+
+      <input type="text" id="name" placeholder="Votre nom" required>
+
+      <input type="email" id="email" placeholder="Votre adresse e-mail" required>
+
+      <select id="service" required>
+
+        <option value="">Quel service recherchez-vous ?</option>
+
+        <option>Stratégie digitale</option>
+
+        <option>Création de contenu</option>
+
+        <option>Gestion des réseaux sociaux</option>
+
+        <option>Identité visuelle</option>
+
+        <option>Autre demande</option>
+
+      </select>
+
+      <textarea id="message" placeholder="Parlez-nous de votre projet..." required></textarea>
+
+      <button type="submit" class="btn btn-primary">
+
+        Préparer mon message →
+
+      </button>
+
+      <div class="form-note" id="formNote">
+
+        Votre application de messagerie s'ouvrira pour envoyer votre demande.
+
+      </div>
+
+    </form>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <a href="#accueil" class="logo">
+
+      NUVORA<span>.</span>
+
+      <small>STUDIO</small>
+
+    </a>
+
+    <div class="footer-links">
+
+      <a href="#accueil">Accueil</a>
+
+      <a href="#services">Services</a>
+
+      <a href="#apropos">Agence</a>
+
+      <a href="#contact">Contact</a>
+
+    </div>
+
+    <div class="footer-text">
+
+      © <span id="year"></span> NUVORA STUDIO. Tous droits réservés.
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+
+  const opened = navLinks.classList.toggle("open");
+
+  menuBtn.setAttribute("aria-expanded", String(opened));
+
+  menuBtn.textContent = opened ? "✕" : "☰";
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    navLinks.classList.remove("open");
+
+    menuBtn.setAttribute("aria-expanded", "false");
+
+    menuBtn.textContent = "☰";
+
+  });
+
+});
+
+// Animations à l'apparition des sections
+
+const observer = new IntersectionObserver(entries => {
+
+  entries.forEach(entry => {
+
+    if(entry.isIntersecting) {
+
+      entry.target.classList.add("visible");
+
+      observer.unobserve(entry.target);
+
+    }
+
+  });
+
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(el => {
+
+  observer.observe(el);
+
+});
+
+// Année automatique
+
+document.getElementById("year").textContent =
+
+  new Date().getFullYear();
+
+// Formulaire de contact
+
+document.getElementById("contactForm").addEventListener("submit", e => {
+
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+
+  const email = document.getElementById("email").value.trim();
+
+  const service = document.getElementById("service").value;
+
+  const message = document.getElementById("message").value.trim();
+
+  // À remplacer par ton adresse professionnelle
+
+  const agencyEmail = "contact@nuvorastudio.fr";
+
+  const subject = encodeURIComponent(
+
+    "Demande de collaboration - NUVORA STUDIO"
+
+  );
+
+  const body = encodeURIComponent(
+
+    "Bonjour NUVORA STUDIO,\n\n" +
+
+    "Nom : " + name + "\n" +
+
+    "E-mail : " + email + "\n" +
+
+    "Service : " + service + "\n\n" +
+
+    "Projet :\n" + message
+
+  );
+
+  document.getElementById("formNote").textContent =
+
+    "Ouverture de votre application de messagerie...";
+
+  window.location.href =
+
+    "mailto:" + agencyEmail +
+
+    "?subject=" + subject +
+
+    "&body=" + body;
+
+});
+
+</script>
+
+</body>
+
+</html>
